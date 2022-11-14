@@ -14,6 +14,15 @@ function TicTacToe() {
             NAME: "You",
         },
     };
+
+    // Simulate computer thinking
+    function sleep(){
+        const date = Date.now()
+        let currentDate = null;
+        do{
+            currentDate = Date.now();
+        } while (currentDate - date < milliseconds)
+    }
   return (
     <div className='tictac'>
         game here
